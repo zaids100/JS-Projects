@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomofocus web app</title>
+    
+    <link rel="stylesheet" href="/style.css">
+  
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="body">   
+     
+    <!-- Header Section -->
+    <header class="header">
+            <div class="details">
+                <div class="logo">
+                    <img src="/assets/asset 0.png" alt="tick">
+                    <span class="pomofocus">Pomofocus</span>
+                </div>
+                <div class="settings">
+                    <button class="btn report"><img src="/assets/asset 1.png" alt="report">Report</button>
+                    <button class="btn settings"><img src="/assets/asset 2.png" alt="settings">Settings</button>
+                    <button class="btn login"><img src="/assets/asset 3.png" alt="login">Login</button>
+                    <button class="btn crown"><img src="/assets/asset 4.png" alt="crown"></button>
+                </div>
+            </div>
+    </header>
+
+    <!-- Main Section Timer and Different Time Sections -->
+    <div class="main-content">
+         <div class="timer">
+            <div class="features">
+                <button class="pomodoro">Pomodoro</button>
+                <button class="shortBreak">Short Break</button>
+                <button class="longBreak">Long Break</button>
+            </div>
+            <div class="time">
+                <h1 class="minutes">25:</h1>
+                <h1 class="seconds">00</h1>
+            </div>
+
+            <button class="start">Start</button>
+         </div>
+
+         <span id="number1">#1</span>
+         <span id="timeToFocus">Time to focus!</span>
+          
+         <!-- Tasks Section   -->  <!--27-03-24-->
+         
+         <div class="tasks">
+            <span>Tasks</span>
+            <img src="/assets/asset 6.png" alt="">
+         </div>
+         
+         <div class="allTasks">
+              <!-- <div class="taskBar">
+                <img class="tick" src="/assets/asset 8.png" alt="tick">
+                <span>This is task no 1</span>
+              </div> -->
+         </div>
+
+
+         <div class="task">
+              <input class="taskInput" type="text" placeholder="What are you working on ?">
+
+              <div class="buttons">
+                <button class="cancel">Cancel</button>
+                <button class="save">Save</button>
+              </div>
+         </div>
+
+         <button class="addTask"><img src="/assets/asset 12.png" alt="">Add task</button>
+    </div>
+    
+    <div style="height: 100vh;"></div>
+    <script src="/script.js"></script>
+    
+</body>
+</html>

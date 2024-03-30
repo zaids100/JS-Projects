@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #ba4949;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: .4rem .4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 200;
+    gap: .2rem;
+    color: white;
+}
+
+/* Set background color with 20% opacity */
+.btn.report {
+    background-color: rgba(255, 255, 255, 0.2); /* Black with 20% opacity */
+}
+
+.btn.settings {
+    background-color: rgba(255, 255, 255, 0.2); /* Black with 20% opacity */
+}
+
+.btn.login {
+    background-color: rgba(255, 255, 255, 0.2); /* Black with 20% opacity */
+}
+
+.btn.crown {
+    background-color: rgba(255, 255, 255, 0.2); /* Black with 20% opacity */
+}
+.settings button img{
+    width: 20px;
+    opacity: 100%;
+}
+
+.settings button{
+    margin-left: 20px;
+}
+
+
+
+.details{
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    padding-top: 2rem;
+    border-bottom: 1px solid rgb(106, 99, 99);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.pomofocus{
+    font-size: 1.5rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: .5rem;
+}
+
+.logo img{
+    width: 25px;
+}
+
+
+/* Main -Section */
+
+.features button {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2); /* Black with 20% opacity */
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.main-content{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}
+
+#number1{
+  margin-top: 2rem;
+  color: rgb(142, 135, 135);
+}
+
+#timeToFocus{
+  color: white;
+  font-size: 1.1rem;
+}
+
+.start {
+    display: inline-block;
+    padding: 12px 100px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    /* background-image: linear-gradient(to bottom right, #00c6ff, #0072ff); */
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px #ba4949;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .start:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px #958c8c;
+  }
+  
+  .start:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #ba4949);
+  }
+  
+  .start:before,
+  .start:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  
+  .start:before {
+    top: -3px;
+    left: -3px;
+    border-radius: 40px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+  }
+  
+  .start:after {
+    /* bottom: -3px;
+    right: -3px; */
+    border-radius: 40px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+  }
+  
+
+  .timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.2); /* Black with 20% opacity */
+    border-radius: 8px;
+    padding: 1rem 4rem;
+  }
+
+  .time{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    font-size: 2.6rem;
+    color: white;
+    
+  }
+  .time h1{
+    margin: 0;
+  }
+  
+  .tasks{
+    /* background-color: red; */
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 2px solid #d8cfcf;
+  }
+
+  .tasks img{
+    width: 20px;
+    cursor: pointer;
+  }
+  
+  .addTask img{
+    width: 20px;
+  }
+
+  .addTask{
+    margin-top: 2rem;
+    padding: 1.6rem;
+    font-size: .9rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.2); /* Black with 20% opacity */
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .addTask:hover{
+    background-color: rgba(0, 0, 0, 0.4); /* Black with 20% opacity */
+  }
+  input{
+    height: 2rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1.4rem;
+    font-family:cursive;
+  }
+  .task{
+    margin-top: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    gap: 10rem;
+    padding: 2rem;
+    display: none;
+  }
+  .buttons{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    gap: 2rem;
+    height: 50px;
+  }
+  .buttons button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  .buttons button:hover{
+    cursor: pointer;
+    background-color: #7a7373;
+    color: white;
+  }
+  
+  .allTasks .taskBar img{
+    width: 20px;
+  }
+
+  .allTasks{
+    width: 100%;
+  }
+
+  .taskBar{
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: white;
+    padding: .8rem;
+    /* display: none; */
+  }
+
+
